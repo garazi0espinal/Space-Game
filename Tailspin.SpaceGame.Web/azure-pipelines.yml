@@ -41,3 +41,7 @@ steps:
     command: 'build'
     arguments: '--no-restore --configuration Release'
     projects: '**/*.csproj'
+
+- script: 'dotnet build --configuration Release'
+  displayName: 'Build the project'
+  workingDirectory: 'Tailspin.SpaceGame.Web' # Especifica el directorio de trabajo donde se encuentra el archivo .csproj o .sln
